@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ghcr.io/yude/groffer:master
+    build: .
+    restart: always
+    ports:
+      - 3000:3000
