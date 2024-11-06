@@ -7,5 +7,5 @@ fi
 
 cd /tmp
 
-groff -S -Dutf8 -F "/home/runner/.local/groff/font" $1 > `basename $1 .roff`.ps
+groff -S -k -F "/home/runner/.local/groff/font" $1 > `basename $1 .roff`.ps
 ps2pdf `basename $1 .roff`.ps

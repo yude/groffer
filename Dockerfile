@@ -1,7 +1,7 @@
 FROM golang:bookworm AS builder
 
 WORKDIR /work
-COPY . /work/
+COPY ./src /work/
 
 RUN go build .
 
